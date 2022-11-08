@@ -27,7 +27,7 @@ spec:
             value: https://localhost:52323
         ports:
         - containerPort: 52323
-        args: [ "--no-auth" ]
+        #args: [ "--no-auth" ]
         volumeMounts:
         - name: diagnostics
           mountPath: /tmp
