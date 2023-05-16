@@ -25,6 +25,8 @@ spec:
         env:
           - name: DOTNETMONITOR_Urls
             value: https://localhost:52323
+          - name: DOTNET_HOSTBUILDER__RELOADCONFIGONCHANGE
+            value: "false"
         ports:
         - containerPort: 52323
         #args: [ "--no-auth" ]

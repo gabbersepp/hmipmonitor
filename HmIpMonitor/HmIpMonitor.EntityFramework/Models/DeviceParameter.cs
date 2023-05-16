@@ -16,8 +16,8 @@ namespace HmIpMonitor.EntityFramework.Models
         public string Parameter { get; set; }
 
         // TODO get threshold from configured temperature of thermostat
-        public double ValueWarnThreshold { get; set; }
-        public double ValueErrorThreshold { get; set; }
+        public double? ValueWarnThreshold { get; set; }
+        public double? ValueErrorThreshold { get; set; }
         // x < ValueWarnThreshold < ValueErrorThreshold vs. ValueErrorThreshold < ValueWarnThreshold < x
         public bool ValueThresholdDirectionRight { get; set; } = true;
 
